@@ -1,0 +1,21 @@
+.h1 {
+    color: $color-primary;
+    font-family: $font-header;
+    font-size: 26px;
+    font-weight: $font-semibold;
+    text-transform: uppercase;
+  }
+  
+.h2 {
+  color: $color-primary;
+  font-size: 14px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
+  
+.h3 {
+    color: $color-dark;
+  font-size: 12px;
+  font-weight: $font-bold;
+  text-transform: uppercase;
+}
