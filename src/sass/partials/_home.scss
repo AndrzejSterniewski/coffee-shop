@@ -1,0 +1,38 @@
+.main {
+background-image: url("/src/images/background.png");
+display: flex;
+flex-direction: column;
+
+.menu {
+    display: flex;
+    text-transform: uppercase;
+    justify-content: space-between;
+
+    .logo-container {
+        margin: auto;
+    }
+
+    .menu-nav {
+        margin: auto;
+    }
+}
+
+.main-title-wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto;
+    align-items: center;
+}
+
+.discover {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    margin: auto;
+    align-items: center;
+}
+
+
+}
+

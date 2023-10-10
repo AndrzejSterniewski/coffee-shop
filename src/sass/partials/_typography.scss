@@ -1,13 +1,24 @@
 /* customize headers and text style here */
 
+/* @import font */
+
 // e.g.
-// .h1 {
-//     color: $color-primary;
-//     font-family: $font-header;
-//     font-size: 26px;
-//     font-weight: $font-semibold;
-//     text-transform: uppercase;
-//   }
+h1 {
+    color: $color-primary;
+    // font-family: $font-header;
+    // font-size: 26px;
+    // font-weight: $font-semibold;
+    text-transform: uppercase;
+  }
+
+li {
+    display: inline;
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
   
 // .h2 {
 //   color: $color-primary;

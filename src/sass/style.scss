@@ -1,16 +1,18 @@
 // normalize default styles
-@import "normalize";
-
-// Bootstrap
-@import "bootstrap";
+@import "partials/normalize";
 
 // variables
-@import "variables";
+@import "partials/variables";
 
 // common styles
-@import "layout";
-@import "global";
-@import "typography";
+@import "partials/layout";
+@import "partials/global";
+@import "partials/typography";
 
 // icons
-@import "icons";
+@import "partials/icons";
+
+// pages
+@import "partials/contact";
+@import "partials/home";
+@import "partials/products";
