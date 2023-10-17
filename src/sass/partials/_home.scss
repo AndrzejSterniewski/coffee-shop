@@ -1,37 +1,38 @@
 .main {
-background-image: url("/src/images/background.png");
-display: flex;
-flex-direction: column;
+  background-image: url("../images/background.png");
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
 
-.menu {
+  .menu {
     display: flex;
     text-transform: uppercase;
     justify-content: space-between;
 
     .logo-container {
-        margin: auto;
+      margin: auto;
     }
 
     .menu-nav {
-        margin: auto;
+      margin: auto;
     }
-}
+  }
 
-.main-title-wrap {
+  .main-title-wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
     margin: auto;
     align-items: center;
-}
+  }
 
-.discover {
+  .discover {
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     margin: auto;
     align-items: center;
-}
+  }
 
 
 }
