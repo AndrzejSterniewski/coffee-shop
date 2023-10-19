@@ -38,3 +38,23 @@
 
 }
 
+.products {
+  height: 200vh;
+  background-color: #ffffff;
+}
+
+.about {
+  background-image: url("../images/about-us.jpg");
+  background-size: cover;
+  height: 75vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  height: 10vh;
+  background-color: #ffffff;
+  text-align: center;
+}
