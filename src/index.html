@@ -18,9 +18,9 @@
             </div>
             <div class="menu-nav">
                 <ul>
-                    <li><a href="">home</a></li>
-                    <li><a href="">products</a></li>
-                    <li><a href="">contact</a></li>
+                    <li><a href="#home">home</a></li>
+                    <li><a href="#products">products</a></li>
+                    <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
         </header>
@@ -33,18 +33,41 @@
         </div>
     </section>
 
+    <div id="pages">
+        <section id="home">
+            <div class="home-wrapper container"></div>
+        </section>
+        <section id="products">
+            <div id="product-list" class="product-list container"></div>
+        </section>
+        <section id="contact">
+            <div class="contact container"></div>
+        </section>
+    </div>
+
     <section class="products">
+        <h1 class="main-title">products</h1>
+        <div class="footer">
+            <p>&copy; 2021 EL TIGRE inc.</p>
+        </div>
 
     </section>
 
-    <section class="about">
+    <div class="about">
         <h1 class="main-title">about us</h1>
-    </section>
+    </div>
 
-    <footer class="footer">
-        <p>&copy; 2021 EL TIGRE inc.</p>
-    </footer>
 
+
+    <script id="template-products" type="text/x-handlebars-template">
+        <h1 class="main-title">products</h1>
+        <div>
+            {{#each products}}
+            <div id="{{ @key }}"></div>
+        </div>
+      </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="./js/app.js" type="module"></script>
 </body>
 
