@@ -1,21 +1,43 @@
-.main {
-  background-image: url("../images/background.png");
+.header {
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.5),
+    rgba(0, 0, 0, 0.5)
+  ), url("../images/background.png");
   background-size: cover;
   display: flex;
   flex-direction: column;
-  height: 100vh;
+  height: 75vh;
+  text-transform: uppercase;
+  justify-content: center;
 
-  .menu {
+  .header-wrapper {
     display: flex;
-    text-transform: uppercase;
-    justify-content: space-between;
+    justify-content: space-around;
 
     .logo-container {
-      margin: auto;
+      color: $color-light;
+
+      .logo-text-title {
+        margin-bottom: 5px;
+        letter-spacing: 10px;
+      }
+
+      .logo-text-subtitle {
+        margin: 0;
+        letter-spacing: 3px;
+      }
+
     }
 
-    .menu-nav {
-      margin: auto;
+    .main-nav {
+      display: flex;
+      align-items: center;
+      word-spacing: 12px;
+
+      a {
+        color: $color-light;
+        opacity: 0.7;
+      }
     }
   }
 
@@ -23,24 +45,59 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: auto;
-    align-items: center;
+    // margin: auto;
+    // align-items: center;
+    letter-spacing: 18px;
+    flex: 1;
+
+    position: relative;
+    
+      .first-line {
+        position: absolute;
+        left: 16%;
+      }
+
+      .second-line {
+        position: absolute;
+        top: 45%;
+        left: 25%;
+      }
+
+.main-decoration-line {
+    height: 5px;
+    width: 15%;
+    justify-content: center;
+    margin-top: 20px;
+    background: linear-gradient(
+      to bottom,
+      $color-primary 2px,
+      $color-primary 3px,
+    );
+    position: absolute;
+    // left: 50%;
+    transform: translate(-50%, -50%);
+    // top: 50%;
+    // right: auto;
+    // bottom: auto;
+    left: 50%;
+    bottom: 50%;
+    bottom: 15%;
+    // padding-top: 0;
+    // padding-bottom: 0;
   }
+  }
+
+  
 
   .discover {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
-    margin: auto;
     align-items: center;
+    color: $color-light;
+    padding: 20px;
+    font-size: 20px;
+    letter-spacing: 5px;
   }
-
-
-}
-
-.products {
-  height: 200vh;
-  background-color: #ffffff;
 }
 
 .about {

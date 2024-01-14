@@ -11,16 +11,23 @@ export const select = {
   templateOf: {
     homePage: '#template-home',
     menuProduct: '#template-products',
+    contactPage: '#template-contact',
   },
   containerOf: {
-    home: '.home-wrapper',
     pages: '#pages',
+    home: '.home-wrapper',
     products: '#product-list',
-    contact: '#contact',
+    contact: '.contact-wrapper',
   },
   all: {
     menuProducts: '#product-list < .product',
-  }
+  },
+  home: {
+    about: '.about',
+  },
+  nav: {
+    links: '.main-nav a',
+  },
 };
 
 export const classNames = {
@@ -33,5 +40,7 @@ export const classNames = {
 };
 
 export const templates = {
+  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
+  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
 };

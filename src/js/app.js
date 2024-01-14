@@ -1,5 +1,7 @@
 import { select, classNames, settings } from './settings.js';
 import Home from './components/Home.js';
+import Products from './components/Products.js';
+import Contact from './components/Contact.js';
 import Product from './components/Product.js';
 
 const app = {
@@ -8,8 +10,7 @@ const app = {
     const thisApp = this;
 
     thisApp.pages = document.querySelector(select.containerOf.pages).children;
-
-    thisApp.navLinks = document.querySelectorAll(select.widgets.nav.links);
+    thisApp.navLinks = document.querySelectorAll(select.nav.links);
 
     const idFromHash = window.location.hash.replace('#/', '');
 
@@ -22,7 +23,6 @@ const app = {
       }
     }
 
-    // thisApp.activatePage(thisApp.pages[0].id);
     thisApp.activatePage(pageMatchingHash);
 
     for (let link of thisApp.navLinks) {
@@ -30,34 +30,24 @@ const app = {
         const clickedElement = this;
         event.preventDefault();
 
-        /* get page id from href attribute */
         const id = clickedElement.getAttribute('href').replace('#', '');
 
-        /* run thisApp.activatePagewith that id */
         thisApp.activatePage(id);
 
-        /* change URL hash */
         window.location.hash = '#/' + id;
       });
     }
-    thisApp.home.initWidgets();
   },
 
   activatePage: function (pageId) {
     const thisApp = this;
 
-    /* add class "active" to matching pages, remove from non-matching */
     for (let page of thisApp.pages) {
-      // if(page.id == pageId){
-      //   page.classList.add(classNames.pages.active);
-      // } else {
-      //   page.classList.remove(classNames.pages.active);
-      // }
-      page.classList.toggle(classNames.pages.active, page.id == pageId);
-      // second argument is a condition to execute 1st argument
+      page.classList.toggle(
+        classNames.pages.active,
+        page.id == pageId);
     }
 
-    /* add class "active" to matching links, remove from non-matching */
     for (let link of thisApp.navLinks) {
       link.classList.toggle(
         classNames.nav.active,
@@ -89,17 +79,33 @@ const app = {
   initHome: function () {
     const thisApp = this;
 
-    const homeElem = document.querySelector(select.containerOf.home);
-    thisApp.home = new Home(homeElem);
+    thisApp.homeContainer = document.querySelector(select.containerOf.home);
+    thisApp.home = new Home(thisApp.homeContainer);
+  },
+
+  initProducts: function () {
+    const thisApp = this;
+
+    thisApp.productsContainer = document.querySelector(select.containerOf.products);
+    thisApp.products = new Products(thisApp.productsContainer);
+  },
+
+  initContact: function () {
+    const thisApp = this;
+
+    thisApp.contactContainer = document.querySelector(select.containerOf.contact);
+    thisApp.contact = new Contact(thisApp.contactContainer);
   },
 
   init: function () {
     const thisApp = this;
 
     thisApp.initHome();
+    thisApp.initPages();
+    thisApp.initProducts();
+    thisApp.initContact();
     thisApp.initData();
     thisApp.initMenu();
-    thisApp.initPages();
     thisApp.ActivatePage();
   },
 };

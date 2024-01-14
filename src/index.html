@@ -10,28 +10,31 @@
 
 <body>
 
-    <section class="main">
-        <header class="menu">
+    <header class="header">
+        <div class="header-wrapper">
             <div class="logo-container">
-                <h2 class="logo-text">el tigre</h2>
-                <p class="logo-text-second">venezuela coffee beans</p>
+                <h2 class="logo-text-title">el tigre</h2>
+                <h5 class="logo-text-subtitle">venezuela coffee beans</h5>
             </div>
-            <div class="menu-nav">
-                <ul>
+            <div class="main-nav">
+                <ul class="main-nav-links">
                     <li><a href="#home">home</a></li>
                     <li><a href="#products">products</a></li>
                     <li><a href="#contact">contact</a></li>
                 </ul>
             </div>
-        </header>
+        </div>
         <div class="main-title-wrap">
-            <h1 class="main-title">home of original tastes</h1>
+            <h1 class="main-title first-line">home of</h1>
+            <h1 class="main-title second-line">original tastes</h1>
+            <div class="main-decoration-line"></div>
         </div>
         <div class="discover">
-            <h3 class="discover-title">discover</h3>
-            <!-- <a href="" class="icon-arrow"></a> -->
+            <p class="discover-text">discover</p>
+            <i class="fa-regular fa-circle-down"></i>
         </div>
-    </section>
+
+    </header>
 
     <div id="pages">
         <section id="home">
@@ -41,33 +44,52 @@
             <div id="product-list" class="product-list container"></div>
         </section>
         <section id="contact">
-            <div class="contact container"></div>
+            <div class="contact-wrapper container"></div>
         </section>
     </div>
 
-    <section class="products">
-        <h1 class="main-title">products</h1>
+    <script id="template-home" type="text/x-handlebars-template">
+        <div class="about container">
+            <h1 class="main-title">about us</h1>
+        </div>
         <div class="footer">
             <p>&copy; 2021 EL TIGRE inc.</p>
         </div>
-
-    </section>
-
-    <div class="about">
-        <h1 class="main-title">about us</h1>
-    </div>
-
-
+    </script>
 
     <script id="template-products" type="text/x-handlebars-template">
         <h1 class="main-title">products</h1>
-        <div>
-            {{#each products}}
-            <div id="{{ @key }}"></div>
+        {{#each products}}
+        <div class="cart__product">
+            <div class="cart__product-header">
+              <span><strong>{{ id }} {{ title }}</strong></span>
+            </div>
+            <div>
+                <span><div class="product-line"></div><div class="product-description">{{ description }}</div></span>
+            </div>
+            <div class="product-rating">
+                <div class="roasting"><h3>roasting:</h3><span>{{ roasting }}</span></div>
+                <div class="intensity"><h3>intensity:</h3><span>{{ intensity }}</span></div>
+            </div>
+            <div class="product-image"><img src="{{ image }}" alt=""></div>
+          </div>
+          {{/each}}
+          <div class="footer">
+            <p>&copy; 2021 EL TIGRE inc.</p>
         </div>
       </script>
 
+    <script id="template-contact" type="text/x-handlebars-template">
+        <div class="contact container">
+            <h1 class="main-title">contact</h1>
+        </div>
+        <div class="footer">
+            <p>&copy; 2021 EL TIGRE inc.</p>
+        </div>
+    </script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
+    <script src="https://kit.fontawesome.com/fdc39021e7.js" crossorigin="anonymous"></script>
     <script src="./js/app.js" type="module"></script>
 </body>
 

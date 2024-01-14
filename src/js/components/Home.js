@@ -1,10 +1,10 @@
-import { templates } from '../settings.js';
+import { select, templates } from '../settings.js';
 
 class Home {
-  constructor(homeElem) {
+  constructor(homeContainer) {
     const thisHome = this;
 
-    thisHome.render(homeElem);
+    thisHome.render(homeContainer);
   }
 
   render(wrapper) {
@@ -17,6 +17,8 @@ class Home {
     thisHome.dom.wrapper = wrapper;
 
     thisHome.dom.wrapper.innerHTML = generatedHTML;
+
+    thisHome.dom.about = thisHome.dom.wrapper.querySelector(select.home.about);
   }
 }
 

@@ -1,13 +1,13 @@
 /* customize headers and text style here */
 
 /* @import font */
+@import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
 // e.g.
 h1 {
   color: $color-primary;
-  // font-family: $font-header;
-  // font-size: 26px;
-  // font-weight: $font-semibold;
+  font-size: 60px;
+  font-weight:bold;
   text-transform: uppercase;
 }
 
