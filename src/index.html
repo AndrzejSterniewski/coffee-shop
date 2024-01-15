@@ -33,7 +33,6 @@
             <p class="discover-text">discover</p>
             <i class="fa-regular fa-circle-down"></i>
         </div>
-
     </header>
 
     <div id="pages">
@@ -48,17 +47,76 @@
         </section>
     </div>
 
-    <script id="template-home" type="text/x-handlebars-template">
+
+    <div class="products container">
+        <div class="section-title-container">
+            <h1 class="section-title">products</h1>
+            <div class="section-title-line"></div>
+        </div>
+    </div>
+
+
+    <div class="about container">
+        <div class="section-title-container">
+            <h1 class="section-title">about us</h1>
+            <div class="section-title-line"></div>
+        </div>
+        <div class="about-text">
+            <p class="about-text-content">Who are we? Just a bunch of friends with a love for a good coffee and desire
+                to create something new, something original.</p>
+            <p class="about-text-content">Our coffees reflect us - young, wild and free. We are ont he journey of new
+                tastes</p>
+            <p class="about-text-action">Join us!</p>
+        </div>
+    </div>
+
+
+    <div class="contact container">
+        <div class="section-title-container">
+            <h1 class="section-title">contact us</h1>
+            <div class="section-title-line"></div>
+        </div>
+        <form class="contact-form">
+            <label>name</label>
+            <input type="text">
+            <label>title</label>
+            <input type="text">
+            <label>message</label>
+            <textarea></textarea>
+            <button type="submit">submit</button>
+        </form>
+    </div>
+
+    <div class="footer">
+        <p>&copy; 2021 EL TIGRE inc.</p>
+    </div>
+
+
+    <!-- <script id="template-home" type="text/x-handlebars-template">
         <div class="about container">
-            <h1 class="main-title">about us</h1>
+            <div class="section-title-container">
+                <h1 class="section-title">about us</h1>
+                <div class="section-title-line"></div>
+            </div>
+            <div class="about-text">
+                <p class="about-text-content">Who are we? Just a bunch of friends with a love for a good coffee and desire
+                    to create something new, something original.</p>
+                <p class="about-text-content">Our coffees reflect us - young, wild and free. We are ont he journey of new
+                    tastes</p>
+                <p class="about-text-action">Join us!</p>
+            </div>
         </div>
         <div class="footer">
             <p>&copy; 2021 EL TIGRE inc.</p>
         </div>
-    </script>
+    </script> -->
 
-    <script id="template-products" type="text/x-handlebars-template">
-        <h1 class="main-title">products</h1>
+    <!-- <script id="template-products" type="text/x-handlebars-template">
+        <div class="products container">
+        <div class="section-title-container">
+        <h1 class="section-title">products</h1>
+        <div class="section-title-line"></div>
+        </div>
         {{#each products}}
         <div class="cart__product">
             <div class="cart__product-header">
@@ -77,16 +135,29 @@
           <div class="footer">
             <p>&copy; 2021 EL TIGRE inc.</p>
         </div>
-      </script>
+        </div>
+      </script> -->
 
-    <script id="template-contact" type="text/x-handlebars-template">
-        <div class="contact container">
-            <h1 class="main-title">contact</h1>
-        </div>
-        <div class="footer">
-            <p>&copy; 2021 EL TIGRE inc.</p>
-        </div>
-    </script>
+    <!-- <script id="template-contact" type="text/x-handlebars-template">
+            <div class="contact container">
+                <div class="section-title-container">
+                    <h1 class="section-title">contact us</h1>
+                    <div class="section-title-line"></div>
+                </div>
+                <form class="contact-form">
+                    <label>name</label>
+                    <input type="text">
+                    <label>title</label>
+                    <input type="text">
+                    <label>message</label>
+                    <textarea></textarea>
+                    <button type="submit">submit</button>
+                </form>
+            </div>
+            <div class="footer">
+                <p>&copy; 2021 EL TIGRE inc.</p>
+            </div>
+        </script> -->
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.0/handlebars.min.js"></script>
     <script src="https://kit.fontawesome.com/fdc39021e7.js" crossorigin="anonymous"></script>

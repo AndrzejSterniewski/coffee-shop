@@ -1,7 +1,7 @@
 .header {
   background: linear-gradient(
-    rgba(0, 0, 0, 0.5),
-    rgba(0, 0, 0, 0.5)
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
   ), url("../images/background.png");
   background-size: cover;
   display: flex;
@@ -52,42 +52,43 @@
 
     position: relative;
     
-      .first-line {
-        position: absolute;
-        left: 16%;
-      }
+    .first-line {
+      position: absolute;
+      margin: 0;
+      left: 16%;
+    }
 
-      .second-line {
-        position: absolute;
-        top: 45%;
-        left: 25%;
-      }
+    .second-line {
+      position: absolute;
+      margin: 0;
+      top: 60%;
+      left: 25%;
+    }
 
-.main-decoration-line {
-    height: 5px;
-    width: 15%;
-    justify-content: center;
-    margin-top: 20px;
-    background: linear-gradient(
-      to bottom,
-      $color-primary 2px,
-      $color-primary 3px,
-    );
-    position: absolute;
-    // left: 50%;
-    transform: translate(-50%, -50%);
-    // top: 50%;
-    // right: auto;
-    // bottom: auto;
-    left: 50%;
-    bottom: 50%;
-    bottom: 15%;
-    // padding-top: 0;
-    // padding-bottom: 0;
+    .main-decoration-line {
+      height: 3px;
+      width: 15%;
+      justify-content: center;
+      margin-top: 20px;
+      background: linear-gradient(
+        to bottom,
+        $color-primary 2px,
+        $color-primary 3px,
+      );
+      position: absolute;
+      // left: 50%;
+      transform: translate(-50%, -50%);
+      // top: 50%;
+      // right: auto;
+      // bottom: auto;
+      left: 50%;
+      bottom: 50%;
+      bottom: 15%;
+      // padding-top: 0;
+      // padding-bottom: 0;
+    }
   }
-  }
 
-  
 
   .discover {
     display: flex;
@@ -101,17 +102,35 @@
 }
 
 .about {
-  background-image: url("../images/about-us.jpg");
+  background: linear-gradient(
+    rgba(0, 0, 0, 0.7),
+    rgba(0, 0, 0, 0.7)
+  ), url("../images/about-us.jpg");
   background-size: cover;
   height: 75vh;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  // justify-content: center;
   align-items: center;
+
+  .about-text {
+    color: $color-light;
+    font-style: italic;
+    text-align:left;
+    width: 45%;
+    height: 50%;
+    margin: auto;
+
+    .about-text-action {
+      text-align: right;
+    }
+  }
 }
 
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 10vh;
   background-color: #ffffff;
-  text-align: center;
 }
