@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   height: 75vh;
+  width: 100%;
   text-transform: uppercase;
   justify-content: center;
 
@@ -45,24 +46,21 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    // margin: auto;
-    // align-items: center;
+    align-items: center;
+    width: 100%;
     letter-spacing: 18px;
     flex: 1;
-
-    position: relative;
     
     .first-line {
-      position: absolute;
       margin: 0;
-      left: 16%;
+      margin-left: 30%;
+      width: 100%;
     }
 
     .second-line {
-      position: absolute;
       margin: 0;
-      top: 60%;
-      left: 25%;
+      width: 100%;
+      margin-left: 50%;
     }
 
     .main-decoration-line {
@@ -75,20 +73,8 @@
         $color-primary 2px,
         $color-primary 3px,
       );
-      position: absolute;
-      // left: 50%;
-      transform: translate(-50%, -50%);
-      // top: 50%;
-      // right: auto;
-      // bottom: auto;
-      left: 50%;
-      bottom: 50%;
-      bottom: 15%;
-      // padding-top: 0;
-      // padding-bottom: 0;
     }
   }
-
 
   .discover {
     display: flex;
@@ -116,8 +102,8 @@
   .about-text {
     color: $color-light;
     font-style: italic;
-    text-align:left;
-    width: 45%;
+    text-align: left;
+    width: 50%;
     height: 50%;
     margin: auto;
 

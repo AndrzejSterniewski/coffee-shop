@@ -3,34 +3,34 @@
 * {
   font-family : $font-page;
 
-    .section-title-container {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
+  .section-title-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 
     .section-title {
-        color: $color-primary;
-        text-align: center;
-        width: 50%;
-        font-size: 60px;
-        font-weight: 600;
-        letter-spacing: 5px;
-        text-transform: uppercase;
-        margin-bottom: 0;
+      color: $color-primary;
+      text-align: center;
+      width: 50%;
+      font-size: 60px;
+      font-weight: 600;
+      letter-spacing: 5px;
+      text-transform: uppercase;
+      margin-bottom: 0;
     }
 
     .section-title-line {
-        height: 3px;
-        width: 40%;
-        justify-content: center;
-        margin-top: 20px;
-        background: linear-gradient(
+      height: 3px;
+      width: 30%;
+      justify-content: center;
+      margin-top: 15px;
+      background: linear-gradient(
         to bottom,
         $color-primary 2px,
         $color-primary 3px,
-        );
+      );
     }
-    }
+  }
 }

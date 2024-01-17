@@ -2,6 +2,45 @@
   height: 100vh;
   background-color: #ffffff;
 
+  .cart-product {
+    width: 50%;
+    height: 200px;
+    border: 2px solid black;
+    display: flex;
+    justify-content: space-around;
+    margin: auto;
 
+    .product-description-wrapper {
+      border: 2px solid black;
+      height: 200px;
+      width: 200px;
+      display: flex;
+      flex-direction: column;
+      align-items: left;
+      justify-content: center;
+
+      .cart-product-header {
+
+      }
+      
+      .product-description {
+      // width: 200px;
+    }
+    }
+
+    
+
+    .product-image {
+      width: 200px;
+
+      border: 2px solid black;
+      background: url(../../images/coffee-1.png);
+      background-size: cover;
+
+      .product-image-title {
+        display: none;
+      }
+    }
+  }
   
 }

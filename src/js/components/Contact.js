@@ -14,6 +14,8 @@ class Contact {
 
     const generatedHTML = templates.contactPage();
 
+    thisContact.dom = {};
+
     thisContact.dom.wrapper = wrapper;
 
     thisContact.dom.wrapper.innerHTML = generatedHTML;
