@@ -2,45 +2,77 @@
   height: 100vh;
   background-color: #ffffff;
 
-  .cart-product {
-    width: 50%;
-    height: 200px;
-    border: 2px solid black;
+  .products-container {
     display: flex;
-    justify-content: space-around;
-    margin: auto;
+    justify-content: center;
+    margin: 40px 0 20px 0;
 
-    .product-description-wrapper {
-      border: 2px solid black;
-      height: 200px;
-      width: 200px;
+    .cart-product {
+      width: 50%;
+      height: 100%;
       display: flex;
-      flex-direction: column;
-      align-items: left;
-      justify-content: center;
 
-      // .cart-product-header {
+      .product-description-wrapper {
+        height: 200px;
+        width: 50%;
+        margin: 20px;
 
-      // }
-      
-      // .product-description {
-      //   // width: 200px;
-      // }
-    }
+        .cart-product-header {
+          text-transform: uppercase;
+          padding-top: 20px;
+        }
 
-    
+        .product-description {
+          display: flex;
+          justify-content: flex-start;
+          align-items: center;
+          margin: 20px 0;
 
-    .product-image {
-      width: 200px;
+          .product-description-line {
+            height: 3px;
+            width: 70px;
+            justify-content: center;
+            background: linear-gradient(
+              to bottom,
+              $color-primary 2px,
+              $color-primary 3px,
+            );
+          }
+          
+        }
+          .product-description-text {
+            margin-left: 10px;
+            text-align: left;
+            }
 
-      border: 2px solid black;
-      background: url(../../images/coffee-1.png);
-      background-size: cover;
+          .product-rating {
+            text-transform: uppercase;
+            margin-top: 30px;
 
-      .product-image-title {
-        display: none;
+            .roasting-value {
+              color: $color-primary;
+            }
+
+            .intensity-value {
+              color: $color-primary;
+            }
+          }
+      }
+
+      .product-image {
+        width: 50%;
+        margin: 20px;
+        background: url(../../images/coffee-1.png);
+        background-size: cover;
+        background-position: center;
+        box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.2);
+
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: contain;
+        }
       }
     }
   }
-  
 }
