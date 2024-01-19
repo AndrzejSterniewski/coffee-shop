@@ -1,7 +1,4 @@
 import { select, classNames, settings } from './settings.js';
-import Home from './components/Home.js';
-import Products from './components/Products.js';
-import Contact from './components/Contact.js';
 import Product from './components/Product.js';
 
 const app = {
@@ -73,40 +70,16 @@ const app = {
       })
       .then((parsedResponse) => {
         this.data.products = parsedResponse;
+        this.initMenu();
       });
-  },
-
-  initHome: function () {
-    const thisApp = this;
-
-    thisApp.homeContainer = document.querySelector(select.containerOf.home);
-    thisApp.home = new Home(thisApp.homeContainer);
-  },
-
-  initProducts: function () {
-    const thisApp = this;
-
-    thisApp.productsContainer = document.querySelector(select.containerOf.products);
-    thisApp.products = new Products(thisApp.productsContainer);
-  },
-
-  initContact: function () {
-    const thisApp = this;
-
-    thisApp.contactContainer = document.querySelector(select.containerOf.contact);
-    thisApp.contact = new Contact(thisApp.contactContainer);
   },
 
   init: function () {
     const thisApp = this;
 
-    thisApp.initHome();
     thisApp.initPages();
-    thisApp.initProducts();
-    thisApp.initContact();
     thisApp.initData();
     thisApp.initMenu();
-    thisApp.ActivatePage();
   },
 };
 

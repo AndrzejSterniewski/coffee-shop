@@ -12,14 +12,13 @@ class Product {
     const thisProduct = this;
     /* generate HMTL based on template */
     const generatedHTML = templates.menuProduct(thisProduct.data);
-    /* create element using utils.createElementFromHTML */
-    thisProduct.element = utils.createDOMFromHTML(generatedHTML);
-    /* find containers */
-    const home = document.querySelector(select.containerOf.home);
-    const products = document.querySelector(select.containerOf.products);
-    /* add element to main page and products page */
-    home.appendChild(thisProduct.element);
-    products.appendChild(thisProduct.element);
+    /* find container */
+    const productsContainers = document.querySelectorAll(select.containerOf.products);
+    for (const productContainer of productsContainers) {
+      /* add element to its containers where it should be */
+      const element = utils.createDOMFromHTML(generatedHTML);
+      productContainer.appendChild(element);
+    }
   }
 }
 export default Product;

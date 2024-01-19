@@ -1,5 +1,4 @@
 /* create here selectors, class */
-
 export const settings = {
   db: {
     url: '//' + window.location.hostname + (window.location.hostname == 'localhost' ? ':3131' : ''),
@@ -9,15 +8,11 @@ export const settings = {
 
 export const select = {
   templateOf: {
-    homePage: '#template-home',
-    menuProduct: '#template-products',
-    contactPage: '#template-contact',
+    menuProduct: '#template-product',
   },
   containerOf: {
     pages: '#pages',
-    home: '.home-wrapper',
-    products: '#product-list',
-    contact: '.contact-wrapper',
+    products: '.product-list',
   },
   all: {
     menuProducts: '#product-list < .product',
@@ -40,7 +35,5 @@ export const classNames = {
 };
 
 export const templates = {
-  homePage: Handlebars.compile(document.querySelector(select.templateOf.homePage).innerHTML),
   menuProduct: Handlebars.compile(document.querySelector(select.templateOf.menuProduct).innerHTML),
-  contactPage: Handlebars.compile(document.querySelector(select.templateOf.contactPage).innerHTML),
 };
