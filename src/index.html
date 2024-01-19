@@ -98,16 +98,13 @@
 
     <script id="template-product" type="text/x-handlebars-template">
         <div class="products container">
-            <div class="products-container">
                 <div class="cart-product">
                     <div class="product-description-wrapper">
                         <div class="cart-product-header">
-                            <span><strong>{{ id }}</strong></span>
-                            <span><strong>{{ title }}</strong></span>
+                            <h1>{{ id }} {{ title }}</h1>
                         </div>
                         <div class="product-description">
                             <div class="product-description-line"></div>
-                            <!-- <span class="product-line"></span> -->
                             <span class="product-description-text">{{ description }}</span>
                         </div>
                         <div class="product-rating">
@@ -121,9 +118,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="product-image"><img src="{{ image }}" alt=""></div>
+                    <div class="product-image"><img src="{{{ image }}}"></div>
                 </div>
-            </div>
         </div>
       </script>
 

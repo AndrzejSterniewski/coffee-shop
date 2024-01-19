@@ -3,8 +3,7 @@
 /* @import font */
 @import url('https://fonts.cdnfonts.com/css/source-sans-pro');
 
-// e.g.
-h1 {
+.main-title, .section-title {
   color: $color-primary;
   font-size: 60px;
   font-weight: bold;
@@ -19,17 +18,3 @@ li {
 a {
   text-decoration: none;
 }
-  
-// .h2 {
-//   color: $color-primary;
-//   font-size: 14px;
-//   font-weight: $font-bold;
-//   text-transform: uppercase;
-// }
-  
-// .h3 {
-//     color: $color-dark;
-//   font-size: 12px;
-//   font-weight: $font-bold;
-//   text-transform: uppercase;
-// }
