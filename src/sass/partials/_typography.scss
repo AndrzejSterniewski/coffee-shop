@@ -8,6 +8,10 @@
   font-size: 60px;
   font-weight: bold;
   text-transform: uppercase;
+  
+  @media (max-width: 845px) {
+    font-size: 50px;
+  }
 }
 
 li {

@@ -91,10 +91,10 @@
   }
 }
 
-  @media (min-width: 950px) {
-    .products:nth-of-type(odd) {
-      .cart-product .product-description-wrapper {
-        order: 1;
-      }
+@media (min-width: 950px) {
+  .products:nth-of-type(odd) {
+    .cart-product .product-description-wrapper {
+      order: 1;
     }
   }
+}
