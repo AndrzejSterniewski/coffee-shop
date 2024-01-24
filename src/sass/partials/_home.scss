@@ -61,15 +61,12 @@
       width: fit-content;
       
       @media (max-width: 815px) {
-        // margin-left: 0;
         letter-spacing: 10px;
       }
       @media (max-width: 670px) {
-        // margin-left: 0;
         letter-spacing: 10px;
         margin-left: 0;;
       }
-
     }
 
     .second-line {
@@ -79,14 +76,8 @@
       text-align: center;
 
       @media (max-width: 815px) {
-        // margin-left: 30%;
         letter-spacing: 10px;
       }
-
-      // @media (max-width: 620px) {
-      //   width: 50%;
-      //   margin-left: -22%;
-      // }
     }
 
     .main-decoration-line {
